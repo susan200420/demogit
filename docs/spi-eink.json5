@@ -1,0 +1,12 @@
+// Diagrama de tiempo WaveDrom: escritura de un byte por SPI al display e-ink.
+// Edítalo y previsualízalo en https://wavedrom.com/editor.html
+{ signal: [
+  { name: "EINK_CS",   wave: "10........1." },
+  { name: "CLK",       wave: "0.p.......l." },
+  { name: "COPI",      wave: "x.========x.", data: ["D7","D6","D5","D4","D3","D2","D1","D0"] },
+  { name: "EINK_DC",   wave: "x1........x." },
+  { name: "EINK_BUSY", wave: "0.........1." }
+],
+  head: { text: "SPI: escritura de un byte de datos al display e-ink" },
+  foot: { text: "DC = 1: dato · DC = 0: comando" }
+}
