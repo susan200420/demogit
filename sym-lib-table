@@ -1,3 +1,4 @@
 (sym_lib_table
 	(version 7)
+	(lib (name "E_Ink_Display") (type "KiCad") (uri "${KIPRJMOD}/Library/E_Ink_Display.kicad_sym") (options "") (descr ""))
 )
