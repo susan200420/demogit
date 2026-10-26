@@ -1,0 +1,25 @@
+# .gitattributes para proyectos KiCad (1MTR68, sesión 9)
+#
+# KiCad guarda sus diseños como TEXTO. En Windows a veces se escriben con
+# finales de línea CRLF y en macOS/Linux con LF. Sin esta regla, cuando alguien
+# guarda desde otro sistema operativo Git cree que cambiaron TODAS las líneas.
+# Aquí le decimos a Git que guarde siempre LF en el repositorio.
+
+* text=auto
+
+*.kicad_sch   text eol=lf
+*.kicad_pcb   text eol=lf
+*.kicad_pro   text eol=lf
+*.kicad_sym   text eol=lf
+*.kicad_mod   text eol=lf
+*.kicad_dru   text eol=lf
+sym-lib-table text eol=lf
+fp-lib-table  text eol=lf
+
+# Binarios: nunca intentar mezclarlos ni convertirlos
+*.png  binary
+*.jpg  binary
+*.pdf  binary
+*.zip  binary
+*.step binary
+*.stl  binary
